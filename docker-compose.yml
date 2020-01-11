@@ -1,0 +1,10 @@
+version: "3.5"
+
+services:
+  app:
+    build: .
+    volumes:
+      - ./:/go/src
+    ports:
+      - "1323:1323"
+      - "3306:3306"
